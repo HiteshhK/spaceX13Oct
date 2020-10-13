@@ -1,0 +1,45 @@
+<div class="container p-1 m-0 filter-container">
+    <strong>Filters</strong>
+    <div class="d-flex flex-column">
+        <div class="filters d-flex flex-column ">
+            <small>Launch Year</small>
+            <hr class="h-100 p-0 m-0 mx-4">
+            <div>
+                <div *ngFor="let y of yearsFilter" class='btn-class' [ngClass]="selectedButtons?.launch_year==(2000+y)?'selected':null" (click)="applyFilter('launch_year',2000+y+'')">
+                    {{2000+y}}
+                </div>
+            </div>
+        </div>
+        <div class="filters d-flex flex-column">
+            <small>Successful Launch</small>
+            <hr class="h-100 p-0 m-0 mx-4">
+            <div >
+                <div class="btn-class"
+                [ngClass]="selectedButtons?.launch_success=='true'?'selected':null"
+                (click)="applyFilter('launch_success','true')">
+                    True
+            </div>
+            <div class="btn-class"
+            [ngClass]="selectedButtons?.launch_success=='false'?'selected':null"
+            (click)="applyFilter('launch_success','false')">
+                false
+        </div>
+            </div>
+        </div>
+        <div class="filters d-flex flex-column">
+            <small>Successful Landing</small>
+            <hr class="h-100 p-0 m-0 mx-4">
+            <div >
+                <div class="btn-class" 
+                [ngClass]="selectedButtons?.land_success=='true'?'selected':null"
+                
+                (click)="applyFilter('land_success','true')">
+                    True
+            </div><div class="btn-class" 
+            [ngClass]="selectedButtons?.land_success=='false'?'selected':null"
+            (click)="applyFilter('land_success','false')">
+                false
+        </div>
+        </div>
+    </div>
+</div>

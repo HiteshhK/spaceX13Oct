@@ -1,0 +1,23 @@
+
+.filter-container{
+    background-color: #fff;
+    border-radius: 4px;
+}
+small{
+    text-align: center;
+}
+
+.btn-class{
+    display: inline-block;
+    width: 41%;
+    border: 1px solid #606060;
+    border-radius: 4px;
+    text-align: center;
+    margin: 6px 8px;
+    padding: 0px 14px;
+    cursor: pointer;
+    background: lightgreen;
+}
+.selected{
+    background-color: green;
+}

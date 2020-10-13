@@ -1,0 +1,14 @@
+.img-container{
+    /* width: 168px; */
+    height: 160px;
+    background-color: #edebeb;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.program-container{
+    height: 280px;
+    background-color: #fff;
+    border-radius:4px; 
+}

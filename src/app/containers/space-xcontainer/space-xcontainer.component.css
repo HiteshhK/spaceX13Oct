@@ -1,0 +1,23 @@
+
+.data-panels{
+    height: calc(100% - 64px);
+}
+.filters{
+    width: 240px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.launch-programs{
+    width: 78%;
+}
+.launch-program{
+    border: 1px solid #606060;
+    border-radius: 4px;
+    margin: 4px;
+    background-color: #fff;
+}
+
+.section{
+    border: 1px solid #606060;
+    border-radius: 4px;
+}

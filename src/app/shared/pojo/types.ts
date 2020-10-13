@@ -1,0 +1,1 @@
+export type filterType = 'launch_success'|'land_success'|'launch_year'; 

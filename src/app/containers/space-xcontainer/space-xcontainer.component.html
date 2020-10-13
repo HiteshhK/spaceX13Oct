@@ -1,0 +1,19 @@
+<div class="container-fluid p-1">
+    <h2>SpaceX Launch Programs</h2>
+    <div class="row p-0 m-0">
+        <div class="col-2">
+            <app-filters (filter)="applyFilter($event)"></app-filters>
+        </div>
+        <div class="col-10">
+            <div class="row">
+                <div class="col-3 p-1" *ngFor="let program of observable|async">
+                    <app-launchprograms [program]="program"></app-launchprograms>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <strong>Developed By</strong> : Hitesh Kaushik
+</div>

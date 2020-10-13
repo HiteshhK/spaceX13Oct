@@ -1,0 +1,27 @@
+<div class="p-3 d-flex flex-column font-size-12 program-container">
+    <div class="img-container d-flex justify-content-center align-items-center">
+        <img [src]="program.src" alt="Image Not Found">
+    </div>
+    <div>
+
+    <div>
+        <strong class="text-info">{{program.mission_name}}#{{program.flight_number}}</strong>
+    </div>
+    <strong>Mission Ids:</strong>
+    <div class="p-0 m-0 ">
+        <div *ngFor = "let id of program.mission_id">
+            {{id}}
+        </div>
+    </div>
+    <div>
+        <strong>Launch Year</strong>:{{program.launch_year}}
+    </div>
+    <div>
+        <strong>Successfull Launch</strong>:{{program.launch_success}}
+    </div>
+    <div>
+        <strong>Successfull Landing</strong>:{{program.land_success}}
+    </div>
+</div>
+
+</div>
